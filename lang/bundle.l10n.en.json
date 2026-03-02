@@ -1,19 +1,21 @@
 {
-    "title.duplicate.file": "Enter a name for the duplicated file:",
-    "title.duplicate.directory": "Enter a name for the duplicated directory:",
+    "title.duplicate.file": "Введите имя для копии файла:",
+    "title.duplicate.directory": "Введите имя для копии папки:",
 
-    "title.overwrite.file": "A file with this name does already exist. Overwrite?",
-    "title.overwrite.directory": "A directory with this name does already exist. Overwrite?",
+    "title.overwrite.file": "Файл с таким именем уже существует. Перезаписать?",
+    "title.overwrite.directory": "Папка с таким именем уже существует. Перезаписать?",
 
-    "action.yes": "Yes",
-    "action.no": "No",
+    "action.yes": "Да",
+    "action.no": "Нет",
 
-    "filetype.directory": "directory",
-    "filetype.file": "file",
-    "filetype.symlink": "symbolic link",
+    "filetype.directory": "папка",
+    "filetype.file": "файл",
+    "filetype.symlink": "символьная ссылка",
 
-    "error.type-change": "Can't change resource type!",
-    "error.refuse-overwrite.file": "Refusing to overwrite existing file!",
-    "error.refuse-overwrite.directory": "Refusing to overwrite existing directory!",
-    "error.exists": "A {type} with the name {name} does already exist!"
+    "error.type-change": "Невозможно изменить тип ресурса!",
+    "error.refuse-overwrite.file": "Отказ в перезаписи существующего файла!",
+    "error.refuse-overwrite.directory": "Отказ в перезаписи существующей папки!",
+    "error.exists": "{type} с именем {name} уже существует!",
+    "error.create-shortcut": "Не удалось создать ярлык: {0}",
+    "info.create-shortcut": "Ярлык создан: {0}"
 }

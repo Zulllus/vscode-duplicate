@@ -1,9 +1,9 @@
 {
-  "name": "duplicate-file",
-  "displayName": "Duplicate Files",
+  "name": "duplicate-and-link",
+  "displayName": "Duplicate Files and make Lnk",
   "description": "Duplicate files and directories.",
-  "version": "1.1.0",
-  "publisher": "axelrindle",
+  "version": "1.2.0",
+  "publisher": "Zulllus",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -18,24 +18,45 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/axelrindle/vscode-duplicate.git"
+    "url": "https://github.com/Zulllus/vscode-duplicate.git"
   },
-  "homepage": "https://github.com/axelrindle/vscode-duplicate#readme",
+  "homepage": "https://github.com/Zulllus/vscode-duplicate#readme",
   "icon": "logo.png",
   "main": "./out/extension.js",
   "l10n": "./lang",
   "contributes": {
+    "customEditors": [
+      {
+        "viewType": "lnk.connector",
+        "displayName": "Windows LNK Redirector",
+        "selector": [
+          {
+            "filenamePattern": "*.lnk"
+          }
+        ],
+        "priority": "default"
+      }
+    ],
     "commands": [
       {
-        "command": "duplicate-file.execute",
+        "command": "duplicate-and-link.execute",
         "title": "%extension.duplicate.title%"
+      },
+      {
+        "command": "duplicate-and-link.duplicateAsShortcut",
+        "title": "%extension.duplicateShortcut.title%"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "duplicate-file.execute",
+          "command": "duplicate-and-link.execute",
           "group": "5_cutcopypaste@99"
+        },
+        {
+          "command": "duplicate-and-link.duplicateAsShortcut",
+          "group": "5_cutcopypaste@100",
+          "when": "explorerResourceIsFolder == false"
         }
       ]
     },
@@ -43,7 +64,7 @@
       {
         "title": "%extension.duplicate.title%",
         "properties": {
-          "duplicate-file.openFile": {
+          "duplicate-and-link.openFile": {
             "type": "boolean",
             "default": true,
             "title": "%extension.duplicate.config.open.title%",
@@ -65,8 +86,9 @@
     "@actcoding/eslint-config": "^0.0.11",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
+    "@types/iconv-lite": "^0.0.1",
     "@types/mocha": "^10.0.10",
-    "@types/node": "20.x",
+    "@types/node": "^25.3.3",
     "@types/vscode": "1.90.0",
     "@vscode/test-electron": "^2.5.2",
     "@vscode/vsce": "^3.6.2",
@@ -76,5 +98,9 @@
     "mocha": "^11.7.4",
     "typescript": "^5.9.3",
     "vscode-extension-tester": "^8.19.0"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.7.2",
+    "windows-shortcuts": "^0.1.6"
   }
 }

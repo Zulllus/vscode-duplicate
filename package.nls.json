@@ -2,5 +2,6 @@
     "extension.duplicate.title": "Duplicate",
 
     "extension.duplicate.config.open.title": "Open file",
-    "extension.duplicate.config.open.desc": "Open the new file after duplication. Ignored for directories."
+    "extension.duplicate.config.open.desc": "Open the new file after duplication. Ignored for directories.",
+    "extension.duplicateShortcut.title": "Duplicate as Shortcut (.lnk)"
 }

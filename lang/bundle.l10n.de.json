@@ -15,5 +15,7 @@
     "error.type-change": "Kann den Typen nicht ändern!",
     "error.refuse-overwrite.file": "Die Datei existiert bereits!",
     "error.refuse-overwrite.directory": "Das Verzeichnis existiert bereits!",
-    "error.exists": "{type} mit dem Namen {name} gibt es schon!"
+    "error.exists": "{type} mit dem Namen {name} gibt es schon!",
+    "error.create-shortcut": "Verknüpfung konnte nicht erstellt werden: {0}",
+    "info.create-shortcut": "Verknüpfung erstellt: {0}"
 }

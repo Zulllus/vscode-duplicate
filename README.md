@@ -1,3 +1,5 @@
+duplicate-and-link modified to suit my needs
+
 <img src="logo.png" align="right" width="128">
 
 # vscode-duplicate

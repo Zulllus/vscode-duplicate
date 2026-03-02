@@ -1,0 +1,7 @@
+{
+    "extension.duplicate.title": "Дублировать",
+
+    "extension.duplicate.config.open.title": "Открыть файл",
+    "extension.duplicate.config.open.desc": "Открыть новый файл после дублирования. Игнорируется для папок.",
+    "extension.duplicateShortcut.title": "Дублировать как ярлык (.lnk)"
+}
